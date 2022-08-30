@@ -1,10 +1,10 @@
 // Declare our dependencies
 var express = require('express');
 var request = require('superagent');
-// var backendHost = process.env.BACK_HOST || 'localhost';
-var backendHost = 'localhost';
+var backendHost = process.env.BACK_HOST || 'localhost';
 // Create our express app
 var app = express();
+console.log(backendHost)
 
 // Set the view engine to use EJS as well as set the default views directory
 app.set('view engine', 'ejs');

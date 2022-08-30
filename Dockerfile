@@ -7,7 +7,7 @@ WORKDIR /movie-analyst-ui
 # Install app dependencies
 COPY package*.json /movie-analyst-ui/
 
-RUN npm Install
+RUN npm install
 
 # Bundle app source
 COPY . /movie-analyst-ui
